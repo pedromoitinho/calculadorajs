@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./style.css" />
+        <title>Estudos</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <h1>Calculadora</h1>
+        </nav>
+        <div id="boxcalculadora">
+            <div class="calculadora">
+                <div class="visorcontainer">
+                    <div class="visor">
+                        <input id="display" readonly>
+                    </div>
+                    <div class="digitos">
+                        <button onclick="appendToDisplay('1')"><h2>1</h2></button>
+                        <button onclick="appendToDisplay('2')"><h2>2</h2></button>
+                        <button onclick="appendToDisplay('3')"><h2>3</h2></button>
+                        <button onclick="appendToDisplay('4')"><h2>4</h2></button>
+                        <button onclick="appendToDisplay('5')"><h2>5</h2></button>
+                        <button onclick="appendToDisplay('6')"><h2>6</h2></button>
+                        <button onclick="appendToDisplay('7')"><h2>7</h2></button>
+                        <button onclick="appendToDisplay('8')"><h2>8</h2></button>
+                        <button onclick="appendToDisplay('9')"><h2>9</h2></button>
+                        <button onclick="appendToDisplay('-')"><h2>-</h2></button>
+                        <button onclick="appendToDisplay('0')"><h2>0</h2></button>
+                        <button onclick="appendToDisplay('+')"><h2>+</h2></button>
+                    </div>
+                    <div class="igualcont">
+                        <button onclick="clearDisplay()" class="igual"><h2>C</h2></button>
+                        <button onclick="calculate()" class="igual"><h2>=</h2></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
